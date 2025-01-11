@@ -1,0 +1,23 @@
+/* bugSolution.css */
+
+/* Custom directive or plugin styles (This would typically be from an external file or plugin) */
+.container { 
+  @apply bg-red-500; /* This is from a plugin or custom directive*/
+}
+
+.my-element {
+  /* Using !important to enforce the desired style.  Consider carefully before using !important */
+  background-color: blue !important; 
+  /* Or use a more specific class name */
+  /*  @apply bg-blue-500; */
+}
+
+/* Alternatively, make the plugin more specific */
+.container.my-element {
+  background-color: blue;
+}
+
+/* Or, use a different approach to applying styles, such as utility-first */
+.my-element {
+  bg-blue-500;
+} 
